@@ -11,7 +11,7 @@ body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  filter: drop-shadow(8px 8px 10px green);
+  filter: drop-shadow(10px 5px 15px green);
 }
 
 .head {
@@ -21,7 +21,6 @@ body {
   background-color: var(--main);
   border-radius: 270% 270% 235% 235%;
   display: flex;
-  /* transform: rotate(8deg);                         IMPPOORRTTANNNTTT!!!!!!! */
 }
 
 .left-eye {
@@ -176,6 +175,7 @@ body {
   width: 200px;
   background-color: var(--main);
   border-radius: 90px;
+  z-index: -3;
 }
 
 .left-hand {
@@ -239,4 +239,16 @@ body {
   right: -141px;
   top: -5px;
   transform: rotate(-7deg);
+}
+
+.shadow {
+  position: absolute;
+  left: 50%;
+  top: 83%;
+  transform: translate(-50%, -50%);
+  width: 186px;
+  height: 100px;
+  background-color: rgb(31, 31, 31);
+  z-index: -2;
+  border-radius: 100%;
 }
